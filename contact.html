@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>CORELINK | Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo" onclick="navigateTo('index.html')"><i class="fas fa-link"></i> CORE<span>LINK</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1><i class="fas fa-address-card"></i> Contact Corelink</h1>
+        <p>Direct line to fabrication expert · Custom quotes within 24h</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Philip</h3>
+                <p style="font-size:1rem; margin-bottom:1.5rem;"><i class="fas fa-crown" style="color:var(--accent); margin-right:6px;"></i>Founders & Lead Fabricators</p>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span><strong>Workshop & Office:</strong> North Airport Road, Nairobi, Kenya</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <span><strong>+254 718 035 088</strong> (WhatsApp available)</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <span><strong>Corelinkcontainers@gmail.com</strong></span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon–Fri 8:00–18:00 CET</span>
+                </div>
+                <div class="owner-badge">
+                    <p><i class="fas fa-hard-hat"></i> Owner-direct consultation</p>
+                    <p style="font-weight:400; font-size:0.85rem;">Philip handles structural design and leads interior outfitting. We personally oversee every container project.</p>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" onsubmit="return handleFormSubmit(event)">
+                <input type="text" placeholder="Your Name *" id="name" required>
+                <input type="email" placeholder="Email Address *" id="email" required>
+                <input type="text" placeholder="Container type interest (e.g., office, shop, bar)" id="interest">
+                <textarea rows="4" placeholder="Tell us about your project..." id="message"></textarea>
+
+                <div class="setup-info" id="setupInfo" style="display:none;">
+                    <h4><i class="fas fa-info-circle"></i> Email Configuration Required</h4>
+                    <p>To receive actual emails, configure: <a href="https://www.emailjs.com/" target="_blank">EmailJS</a> or <a href="https://formspree.io/" target="_blank">Formspree</a></p>
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> Send Inquiry to Owner
+                    <div class="spinner" id="spinner"></div>
+                </button>
+                <div class="form-message success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i> <span id="successText"></span>
+                </div>
+                <div class="form-message error-message" id="errorMessage">
+                    <i class="fas fa-exclamation-circle"></i> <span id="errorText"></span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 CORELINK Fabrication Solutions. Engineered with <i class="fas fa-heart" style="color:var(--accent); cursor:pointer;" onclick="alert('❤️ Thank you for choosing Corelink!')"></i> from steel to dream space.</p>
+        <p style="margin-top:0.3rem; font-size:0.8rem;"><i class="fas fa-link"></i> corelink container architecture · custom fabrication · worldwide delivery</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>CORELINK | Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo" onclick="navigateTo('index.html')"><i class="fas fa-link"></i> CORE<span>LINK</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="solutions.html" class="active">Solutions</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1><i class="fas fa-drafting-compass"></i> Corelink Fabrication Solutions</h1>
+        <p>10 versatile container solutions transforming steel into functional exterior spaces. Each structure built to last.</p>
+    </section>
+
+    <!-- Solutions Grid -->
+    <section class="solutions-section">
+        <div class="solutions-grid">
+
+            <!-- Bar -->
+            <div class="solution-card" onclick="inquireAbout('Container Bar')">
+                <div class="card-img img-bar">
+                    <span class="category-label">Hospitality</span>
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Container Bar</h3>
+                    <p>Eye-catching bar structures with outdoor serving windows, fold-down counters, and weather-resistant exterior finishes.</p>
+                    <span class="tag"><i class="fas fa-beer"></i> hospitality</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Container Bar')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Café -->
+            <div class="solution-card" onclick="inquireAbout('Café & Bistro')">
+                <div class="card-img img-cafe">
+                    <span class="category-label">Food Service</span>
+                    <i class="fas fa-mug-hot"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Café & Bistro</h3>
+                    <p>Charming container cafés with large glass facades, awnings, and integrated outdoor seating platforms.</p>
+                    <span class="tag"><i class="fas fa-coffee"></i> food service</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Café & Bistro')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- House -->
+            <div class="solution-card" onclick="inquireAbout('Container Homes')">
+                <div class="card-img img-house">
+                    <span class="category-label">Residential</span>
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Container Homes</h3>
+                    <p>Striking modern residences with wooden cladding, rooftop terraces, and floor-to-ceiling windows.</p>
+                    <span class="tag"><i class="fas fa-leaf"></i> residential</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Container Homes')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Office -->
+            <div class="solution-card" onclick="inquireAbout('Container Offices')">
+                <div class="card-img img-office">
+                    <span class="category-label">Commercial</span>
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Container Offices</h3>
+                    <p>Professional workspace solutions with modular layouts, high-speed internet readiness, HVAC systems, and ergonomic design.</p>
+                    <span class="tag"><i class="fas fa-briefcase"></i> commercial</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Container Offices')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Shop -->
+            <div class="solution-card" onclick="inquireAbout('Container Shops')">
+                <div class="card-img img-shop">
+                    <span class="category-label">Retail</span>
+                    <i class="fas fa-store"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Container Shops</h3>
+                    <p>Trendy retail spaces with large display windows, customizable shelving, security shutters, and branded exterior finishes.</p>
+                    <span class="tag"><i class="fas fa-shopping-bag"></i> retail</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Container Shops')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Warehouse -->
+            <div class="solution-card" onclick="inquireAbout('Warehouse Storage')">
+                <div class="card-img img-warehouse">
+                    <span class="category-label">Industrial</span>
+                    <i class="fas fa-warehouse"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Warehouse Storage</h3>
+                    <p>Robust storage facilities with roll-up doors, security locks, and weatherproof exterior coatings.</p>
+                    <span class="tag"><i class="fas fa-pallet"></i> industrial</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Warehouse Storage')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Security -->
+            <div class="solution-card" onclick="inquireAbout('Security Booths')">
+                <div class="card-img img-security">
+                    <span class="category-label">Safety</span>
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Security Booths</h3>
+                    <p>Highly visible guard houses with 360° windows, reflective markings, and reinforced exterior panels.</p>
+                    <span class="tag"><i class="fas fa-user-shield"></i> safety</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Security Booths')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Clinic -->
+            <div class="solution-card" onclick="inquireAbout('Medical Clinics')">
+                <div class="card-img img-clinic">
+                    <span class="category-label">Healthcare</span>
+                    <i class="fas fa-clinic-medical"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Medical Clinics</h3>
+                    <p>Professional healthcare units with accessible ramps, medical-grade exterior signage, and clean modern lines.</p>
+                    <span class="tag"><i class="fas fa-stethoscope"></i> healthcare</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Medical Clinics')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Classroom -->
+            <div class="solution-card" onclick="inquireAbout('Classrooms')">
+                <div class="card-img img-classroom">
+                    <span class="category-label">Education</span>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Classrooms</h3>
+                    <p>Bright educational modules with multiple windows, covered walkways, and child-safe exterior finishes.</p>
+                    <span class="tag"><i class="fas fa-school"></i> education</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Classrooms')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tank -->
+            <div class="solution-card" onclick="inquireAbout('Storage Tanks')">
+                <div class="card-img img-tank">
+                    <span class="category-label">Storage</span>
+                    <i class="fas fa-water"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Storage Tanks</h3>
+                    <p>Heavy-duty fabricated tanks with corrosion-resistant coatings, access ladders, and industrial-grade fittings.</p>
+                    <span class="tag"><i class="fas fa-oil-can"></i> liquid storage</span>
+                    <a href="contact.html" class="card-btn" onclick="event.stopPropagation(); sessionStorage.setItem('inquiryType', 'Storage Tanks')">
+                        <i class="fas fa-arrow-right"></i> Inquire Now
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 CORELINK Fabrication Solutions. Engineered with <i class="fas fa-heart" style="color:var(--accent); cursor:pointer;" onclick="alert('❤️ Thank you for choosing Corelink!')"></i> from steel to dream space.</p>
+        <p style="margin-top:0.3rem; font-size:0.8rem;"><i class="fas fa-link"></i> corelink container architecture · custom fabrication · worldwide delivery</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
